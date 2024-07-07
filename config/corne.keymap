@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -28,19 +29,19 @@
 
         symbols {
             bindings = <
-&none      &kp TILDE      &kp AT         &kp HASH           &kp GREATER_THAN  &kp RIGHT_BRACKET        &kp LEFT_BRACKET      &kp LESS_THAN  &kp DOLLAR     &kp PERCENT   &kp CARET        &none
+&trans     &kp TILDE      &kp AT         &kp HASH           &kp GREATER_THAN  &kp RIGHT_BRACKET        &kp LEFT_BRACKET      &kp LESS_THAN  &kp DOLLAR     &kp PERCENT   &kp CARET        &trans
 &kp GRAVE  &kp PIPE       &kp AMPERSAND  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp RIGHT_PARENTHESIS    &kp LEFT_PARENTHESIS  &kp COLON      &kp SEMICOLON  &kp QUESTION  &kp EXCLAMATION  &kp EQUAL
-&none      &kp BACKSLASH  &kp PLUS       &kp ASTERISK       &kp UNDERSCORE    &kp RIGHT_BRACE          &kp LEFT_BRACE        &kp MINUS      &kp COMMA      &kp PERIOD    &kp SLASH        &none
+&trans     &kp BACKSLASH  &kp PLUS       &kp ASTERISK       &kp UNDERSCORE    &kp RIGHT_BRACE          &kp LEFT_BRACE        &kp MINUS      &kp COMMA      &kp PERIOD    &kp SLASH        &trans
                                          &kp LS(LA(MINUS))  &kp LA(MINUS)     &kp LA(NUMBER_3)         &trans                &trans         &trans
             >;
         };
 
         system_control {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &none   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &none   &kp LEFT_ARROW        &kp DOWN_ARROW        &kp UP_ARROW       &kp RIGHT_ARROW  &kp TAB
-&trans  &trans  &trans  &trans  &trans  &trans    &none   &kp LG(MINUS)         &kp LG(EQUAL)         &kp LG(N0)         &kp C_MUTE       &trans
-                        &trans  &trans  &trans    &trans  &trans                &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LG(Q))  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_NXT     &kp LEFT_ARROW        &kp DOWN_ARROW        &kp UP_ARROW       &kp RIGHT_ARROW  &kp TAB
+&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR     &kp LG(MINUS)         &kp LG(EQUAL)         &kp LG(N0)         &kp C_MUTE       &trans
+                        &trans  &trans  &trans    &trans         &trans                &trans
             >;
         };
 
