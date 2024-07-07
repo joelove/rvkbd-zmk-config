@@ -1,0 +1,14 @@
+file_format: "1"
+id: raven
+name: Raven Keyboard
+type: shield
+url: https://github.com/joelove/rvkbd/
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - underglow
+siblings:
+  - raven_left
+  - raven_right
