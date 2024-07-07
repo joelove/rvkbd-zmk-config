@@ -28,36 +28,36 @@
 
         symbols {
             bindings = <
-&none      &kp TILDE      &kp AT         &kp LS(NUMBER_3)   &kp GREATER_THAN  &kp RIGHT_BRACKET        &kp LEFT_BRACKET      &kp LESS_THAN  &kp DOLLAR     &kp PERCENT   &kp CARET        &none
+&none      &kp TILDE      &kp AT         &kp HASH           &kp GREATER_THAN  &kp RIGHT_BRACKET        &kp LEFT_BRACKET      &kp LESS_THAN  &kp DOLLAR     &kp PERCENT   &kp CARET        &none
 &kp GRAVE  &kp PIPE       &kp AMPERSAND  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp RIGHT_PARENTHESIS    &kp LEFT_PARENTHESIS  &kp COLON      &kp SEMICOLON  &kp QUESTION  &kp EXCLAMATION  &kp EQUAL
 &none      &kp BACKSLASH  &kp PLUS       &kp ASTERISK       &kp UNDERSCORE    &kp RIGHT_BRACE          &kp LEFT_BRACE        &kp MINUS      &kp COMMA      &kp PERIOD    &kp SLASH        &none
-                                         &kp LS(LA(MINUS))  &kp LA(MINUS)     &kp HASH                 &trans                &trans         &trans
+                                         &kp LS(LA(MINUS))  &kp LA(MINUS)     &kp LA(NUMBER_3)         &trans                &trans         &trans
             >;
         };
 
-        layer_2 {
+        system_control {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW        &kp DOWN_ARROW        &kp UP_ARROW       &kp RIGHT_ARROW  &kp TAB
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LG(MINUS)         &kp LG(EQUAL)         &kp LG(N0)         &kp C_MUTE       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &none   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &none   &kp LEFT_ARROW        &kp DOWN_ARROW        &kp UP_ARROW       &kp RIGHT_ARROW  &kp TAB
+&trans  &trans  &trans  &trans  &trans  &trans    &none   &kp LG(MINUS)         &kp LG(EQUAL)         &kp LG(N0)         &kp C_MUTE       &trans
                         &trans  &trans  &trans    &trans  &trans                &trans
             >;
         };
 
-        layer_3 {
+        mods_and_num_pad {
             bindings = <
-&trans   &trans          &trans            &trans        &trans            &trans           &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &trans
+&trans   &none           &none             &none         &none             &none            &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SUBTRACT  &trans
 &kp TAB  &kp LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &kp LG(SPACE)    &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_ENTER
-&trans   &trans          &trans            &trans        &trans            &trans           &kp KP_EQUAL     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp TAB          &trans
+&trans   &none           &none             &none         &none             &none            &kp KP_EQUAL     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp TAB          &trans
                                            &trans        &trans            &trans           &trans           &trans           &trans
             >;
         };
 
-        layer_4 {
+        app_control {
             bindings = <
-&trans      &kp LS(LC(LA(LG(NUMBER_1))))  &kp LS(LA(LG(SPACE)))  &kp LC(LA(LG(SPACE)))  &kp LC(LA(TAB))    &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE  &kp RS(LC(LG(TILDE)))         &kp LS(LC(LG(Z)))      &kp LC(LA(LG(X)))      &kp LC(LA(LG(C)))  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp LC(LG(TILDE))             &kp LC(LG(Z))          &kp LC(LA(X))          &kp LC(LA(C))      &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp LS(LC(LA(LG(NUMBER_1))))  &kp LS(LA(LG(SPACE)))  &kp LC(LA(LG(SPACE)))  &kp LC(LA(TAB))    &none     &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &kp RS(LC(LA(TILDE)))         &kp LS(LC(LA(Z)))      &kp LC(LA(LG(X)))      &kp LC(LA(LG(C)))  &none     &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp RS(LC(LA(LG(TILDE))))     &kp LS(LC(LA(LG(Z))))  &kp LC(LA(X))          &kp LC(LA(C))      &none     &trans  &trans  &trans  &trans  &trans  &trans
                                                                  &trans                 &trans             &trans    &trans  &trans  &trans
             >;
         };
