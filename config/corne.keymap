@@ -55,7 +55,7 @@
 
         app_control {
             bindings = <
-&trans      &kp LS(LC(LA(LG(NUMBER_1))))  &kp LS(LA(LG(SPACE)))  &kp LC(LA(LG(SPACE)))  &kp LC(LA(TAB))    &none     &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp LS(LC(LA(LG(NUMBER_1))))  &kp LS(LA(LG(SPACE)))  &kp LC(LA(LG(SPACE)))  &kp LA(LG(TAB))    &none     &trans  &trans  &trans  &trans  &trans  &trans
 &kp ESCAPE  &kp RS(LC(LA(TILDE)))         &kp LS(LC(LA(Z)))      &kp LC(LA(LG(X)))      &kp LC(LA(LG(C)))  &none     &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &kp RS(LC(LA(LG(TILDE))))     &kp LS(LC(LA(LG(Z))))  &kp LC(LA(X))          &kp LC(LA(C))      &none     &trans  &trans  &trans  &trans  &trans  &trans
                                                                  &trans                 &trans             &trans    &trans  &trans  &trans
