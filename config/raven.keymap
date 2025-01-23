@@ -28,7 +28,7 @@
 &trans     &kp TILDE      &kp AT         &kp HASH           &kp GREATER_THAN  &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp LESS_THAN  &kp DOLLAR     &kp PERCENT   &kp CARET        &trans
 &kp GRAVE  &kp PIPE       &kp AMPERSAND  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp COLON      &kp SEMICOLON  &kp QUESTION  &kp EXCLAMATION  &kp EQUAL
 &trans     &kp BACKSLASH  &kp PLUS       &kp ASTERISK       &kp UNDERSCORE    &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp MINUS      &kp COMMA      &kp PERIOD    &kp SLASH        &trans
-                                         &kp LS(LA(MINUS))  &kp LA(MINUS)     &kp LA(NUMBER_3)                             &trans         &trans         &trans
+                                         &kp LS(LA(MINUS))  &kp LA(MINUS)     &kp LA(NUMBER_3)                             &kp LA(N2)     &trans         &trans
             >;
         };
 
