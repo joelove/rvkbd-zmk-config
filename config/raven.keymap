@@ -35,8 +35,8 @@
         system_control {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LG(Q))  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &bt BT_NXT     &kp LEFT_ARROW        &kp DOWN_ARROW        &kp UP_ARROW       &kp RIGHT_ARROW  &kp TAB
-&trans  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR     &kp LG(MINUS)         &kp LG(EQUAL)         &kp LG(N0)         &kp C_MUTE       &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none          &kp LEFT_ARROW        &kp DOWN_ARROW        &kp UP_ARROW       &kp RIGHT_ARROW  &kp TAB
+&trans  &trans  &trans  &trans  &trans  &trans  &none          &kp LG(MINUS)         &kp LG(EQUAL)         &kp LG(N0)         &kp C_MUTE       &trans
                         &trans  &trans  &trans                 &trans                &trans                &trans
             >;
         };
@@ -55,7 +55,16 @@
 &trans      &kp LS(LC(LA(LG(NUMBER_1))))  &kp LS(LA(LG(SPACE)))  &kp LC(LA(LG(SPACE)))  &kp LA(LG(TAB))    &none   &trans  &trans  &trans  &trans  &trans  &trans
 &kp ESCAPE  &kp RS(LC(LA(TILDE)))         &kp LS(LC(LA(Z)))      &kp LC(LA(LG(X)))      &kp LC(LA(LG(C)))  &none   &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &kp RS(LC(LA(LG(TILDE))))     &kp LS(LC(LA(LG(Z))))  &kp LC(LA(X))          &kp LC(LA(C))      &none   &trans  &trans  &trans  &trans  &trans  &trans
-                                                                 &trans                 &trans             &trans          &trans  &trans  &trans
+                                                                 &trans                 &mo 5              &trans          &trans  &trans  &trans
+            >;
+        };
+
+        bluetooth {
+            bindings = <
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &trans        &trans        &trans        &bt BT_PRV    &bt BT_NXT      &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans        &trans        &bt BT_CLR_ALL          &trans  &trans  &trans
             >;
         };
     };
