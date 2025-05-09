@@ -1,6 +1,6 @@
 file_format: "1"
 id: raven
-name: Raven Keyboard
+name: Raven[β]
 type: shield
 url: https://github.com/joelove/rvkbd/
 requires: [pro_micro]
