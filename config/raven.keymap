@@ -37,7 +37,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LG(Q))  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none          &kp LEFT_ARROW        &kp DOWN_ARROW        &kp UP_ARROW       &kp RIGHT_ARROW  &kp TAB
 &trans  &trans  &trans  &trans  &trans  &trans  &none          &kp LG(MINUS)         &kp LG(EQUAL)         &kp LG(N0)         &kp C_MUTE       &trans
-                        &trans  &trans  &trans                 &trans                &trans                &trans
+                        &trans  &trans  &trans                 &trans                &mo 5                 &trans
             >;
         };
 
