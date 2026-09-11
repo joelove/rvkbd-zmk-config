@@ -150,6 +150,7 @@ static int soc_map_init(const struct device *dev)
     return 0;
 }
 
+/* Init priority must be a literal. 91 is one after the voltage sensor (90). */
 #define RAVEN_BATTERY_SOC_MAP_INIT(n)                                                              \
     BUILD_ASSERT(DT_INST_PROP_LEN(n, voltage_mv) == DT_INST_PROP_LEN(n, percent),                  \
                  "voltage-mv and percent must be the same length");                                \
@@ -169,6 +170,6 @@ static int soc_map_init(const struct device *dev)
     static struct soc_map_data soc_map_data_##n;                                                   \
                                                                                                    \
     DEVICE_DT_INST_DEFINE(n, soc_map_init, NULL, &soc_map_data_##n, &soc_map_config_##n,           \
-                          POST_KERNEL, CONFIG_SENSOR_INIT_PRIORITY + 1, &soc_map_api);
+                          POST_KERNEL, 91, &soc_map_api);
 
 DT_INST_FOREACH_STATUS_OKAY(RAVEN_BATTERY_SOC_MAP_INIT)
