@@ -1,0 +1,11 @@
+# Copyright (c) 2026 Joe Love
+# SPDX-License-Identifier: MIT
+
+config RAVEN_BATTERY_SOC_MAP
+	bool "Raven battery voltage to state-of-charge map"
+	default y
+	depends on DT_HAS_RAVEN_BATTERY_SOC_MAP_ENABLED
+	select SENSOR
+	help
+	  Read a voltage sensor and convert millivolts to a Bluetooth
+	  battery percentage using a shield-defined lookup table.

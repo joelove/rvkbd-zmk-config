@@ -11,6 +11,23 @@
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
+        zmk,battery = &vbatt_soc;
+    };
+
+    /*
+     * Aged 301230 110mAh LiPo curve for the voltages this board actually sees.
+     * 3.7V on the cell label is nominal (mid-discharge), not full. Full is still
+     * 4.2V chemistry; these packs settle near 4.00V after charge and die around
+     * 3.55-3.65V under Bluetooth load.
+     *
+     * Retune after a discharge cycle: raise the 99% voltage if a full charge
+     * still reads low, raise the 0% voltage if the board dies above single digits.
+     */
+    vbatt_soc: vbatt_soc {
+        compatible = "raven,battery-soc-map";
+        voltage-sensor = <&vbatt>;
+        voltage-mv = <4000 3960 3900 3820 3740 3680 3620 3580>;
+        percent = <99 90 75 50 25 12 5 0>;
     };
 
     default_transform: keymap_transform_0 {
